@@ -9,6 +9,8 @@ A C++ Prototype of Role Playing Game using C++ / SDL2 / Tiled
   - [Features](#features)
   - [Lessons](#lessons)
   - [ToDo's](#todos)
+  - [Credits](#credits)
+  - [ChatGPT](#chatgpt)
 
 ## Overview
 
@@ -28,7 +30,9 @@ I built a prototype of a simple dungeon using C++, Visual Studio C++, and SDL2 l
 
 - Learned about language syntax (C++), header files, pointers, object oriented programming, data structures (Lists, Maps, Arrays)
 
-- In as much as possible, the functions of each the Map rendering, game logic, and Models are separate in their implementation. Private fields, private functions and good programming practices allowed for encapsulation.
+- In as much as possible, the functions of each the Map rendering, game logic, and Models are separate in their implementation.
+
+- Private fields, private functions and good programming practices allowed for encapsulation. For example the only way to retrieve a players statistics is to call its private getStats() method.
 
 - Polymorphism in this game allows Player and Monsters to inherit the Character class. This allowed me to process/code behavior for both Player and Monsters while simultaneously allowing them to have unique behaviors (HP, Agi, Def whereas Globs can Shriek() ).
 
@@ -55,3 +59,11 @@ Clone the repo on a Windows x64 machine and start the "RPG Game Project.exe" fil
 ```
  \RPG-Game-Project\x64\Debug\RPG Game Project.exe
 ```
+
+### ChatGPT
+
+The printed source code given by ChatGPT is inside [chatgpt-response.txt](chatgpt-response.txt). Luckily it's not TOO skilled at this endeavor yet but provided interesting boiler plate code.
+
+Here's also a snapshot of it.
+
+<a href="url"><img src="chatgpt-response.png" align="center" width="250" ></a>

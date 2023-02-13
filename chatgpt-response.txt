@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+// Define the player class
+class Player {
+  private:
+    std::string name;
+    int health;
+    int level;
+    int experience;
+    std::vector<std::string> inventory;
+
+  public:
+    Player(std::string name) {
+      this->name = name;
+      this->health = 100;
+      this->level = 1;
+      this->experience = 0;
+    }
+
+    void printStatus() {
+      std::cout << "Name: " << this->name << std::endl;
+      std::cout << "Health: " << this->health << std::endl;
+      std::cout << "Level: " << this->level << std::endl;
+      std::cout << "Experience: " << this->experience << std::endl;
+      std::cout << "Inventory: ";
+      for (std::string item : this->inventory) {
+        std::cout << item << " ";
+      }
+      std::cout << std::endl;
+    }
+
+    void addItem(std::string item) {
+      this->inventory.push_back(item);
+    }
+
+    void addExperience(int amount) {
+      this->experience += amount;
+      if (this->experience >= 100) {
+        this->level++;
+        this->experience = 0;
+        std::cout << "You have leveled up to level " << this->level << "!" << std::endl;
+      }
+    }
+
+    void takeDamage(int amount) {
+      this->health -= amount;
+      if (this->health <= 0) {
+        std::cout << "You have died!" << std::endl;
+      }
+    }
+};
+
+int main() {
+  Player player("Hero");
+  player.printStatus();
+
+  player.addItem("Sword");
+  player.addExperience(50);
+  player.takeDamage(20);
+  player.printStatus();
+
+  return 0;
+}
