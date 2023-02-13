@@ -18,7 +18,7 @@ I built a prototype of a simple dungeon using C++, Visual Studio C++, and SDL2 l
 
 ### Screenshot
 
-<a href="url"><img src="screenshot.png" align="center" width="250" ></a>
+<a href="screenshot.png"><img src="screenshot.png" align="center" width="250" ></a>
 
 ### Features
 
@@ -66,4 +66,4 @@ The printed source code given by ChatGPT is inside [chatgpt-response.txt](chatgp
 
 Here's also a snapshot of it.
 
-<a href="url"><img src="chatgpt-response.png" align="center" width="250" ></a>
+<a href="chatgpt-response.png"><img src="chatgpt-response.png" align="center" width="250" ></a>
