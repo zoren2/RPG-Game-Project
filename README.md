@@ -6,6 +6,7 @@ A C++ Prototype of Role Playing Game using C++ / SDL2 / Tiled
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Features](#features)
   - [Lessons](#lessons)
   - [ToDo's](#todos)
 
@@ -27,7 +28,7 @@ I built a prototype of a simple dungeon using C++, Visual Studio C++, and SDL2 l
 
 - Learned about language syntax (C++), header files, pointers, object oriented programming, data structures (Lists, Maps, Arrays)
 
-- In as much as possible, the functions of each the Map rendering, game logic, and Models are separate in their implementation.
+- In as much as possible, the functions of each the Map rendering, game logic, and Models are separate in their implementation. Private fields, private functions and good programming practices allowed for encapsulation.
 
 - Polymorphism in this game allows Player and Monsters to inherit the Character class. This allowed me to process/code behavior for both Player and Monsters while simultaneously allowing them to have unique behaviors (HP, Agi, Def whereas Globs can Shriek() ).
 
